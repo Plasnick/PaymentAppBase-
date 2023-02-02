@@ -1,0 +1,18 @@
+Overall, good! I can see a lot of great stuff like the exceptions, the care
+taken to modulate the response codes and small things like returning the
+new balance when transfering. 
+
+Some minor comments:
+-Now that you're all pro's consider rewriting:
+
+        List<String> userList = new ArrayList<>();
+        userList = userDAO.findAllUsers();
+
+as ...
+
+        List<String> userList = userDAO.findAllUsers();
+
+
+
+- Name this variable better:
+@Valid @RequestBody Widget widget
